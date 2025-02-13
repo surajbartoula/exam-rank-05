@@ -2,6 +2,9 @@
 
 Warlock::Warlock(const std::string& name, const std::string& title): _name(name), _title(title) {
 	std::cout << _name << ": This looks like another boring day." << std::endl;
+	for (std::map<std::string, ASpell*>::iterator it = spells.begin(); it != spells.end(); ++it)
+		delete it->second;
+	spells.clear();
 }
 
 Warlock::~Warlock() {
