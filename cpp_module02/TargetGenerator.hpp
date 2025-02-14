@@ -1,7 +1,10 @@
 #pragma once
 
-#include "ATarget.hpp"
+#include <iostream>
+#include <string>
 #include <map>
+#include "ATarget.hpp"
+#include "ATarget.hpp"
 
 class TargetGenerator {
 private:
@@ -12,7 +15,7 @@ public:
 	TargetGenerator();
 	~TargetGenerator();
 
-	void learnTargetType(ATarget* target);
+	void learnTargetType(ATarget *target);
 	void forgetTargetType(const std::string& type);
 	ATarget* createTarget(const std::string& type);
 };

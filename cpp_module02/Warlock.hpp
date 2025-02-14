@@ -12,7 +12,6 @@ private:
 	std::string _name;
 	std::string _title;
 	SpellBook spellBook;
-
 	Warlock(void);
 	Warlock(const Warlock& old);
 	Warlock& operator=(const Warlock& rhs);

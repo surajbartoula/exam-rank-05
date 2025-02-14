@@ -6,5 +6,5 @@ class Fireball: public ASpell {
 public:
 	Fireball();
 	virtual ~Fireball();
-	virtual ASpell* clone() const;
+	ASpell* clone() const;
 };

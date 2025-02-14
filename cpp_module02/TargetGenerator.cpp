@@ -8,7 +8,7 @@ TargetGenerator::~TargetGenerator() {
 	targets.clear();
 }
 
-void TargetGenerator::learnTargetType(ATarget* target) {
+void TargetGenerator::learnTargetType(ATarget *target) {
 	if (target) {
 		if (targets.find(target->getType()) != targets.end())
 			delete targets[target->getType()];
